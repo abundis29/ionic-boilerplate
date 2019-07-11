@@ -1,0 +1,36 @@
+<ion-content fullscreen>
+
+  <div class="centered ">
+    <ion-buttons slot="start">
+      <img src="/assets/shapes.svg" alt="title-image" height="33" style="padding-left:1rem" />
+    </ion-buttons>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Login</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-list lines="full" class="ion-no-margin ion-no-padding">
+
+
+          <ion-item>
+            <ion-label position="stacked">Email <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input type="text" required [(ngModel)]="user.email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Password<ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input type="password" required [(ngModel)]="user.password"></ion-input>
+          </ion-item>
+
+          <div class="ion-padding">
+            <ion-button expand="block" (click)="register()" class="ion-no-margin">Join</ion-button>
+          </div>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>

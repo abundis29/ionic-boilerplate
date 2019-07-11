@@ -1,5 +1,7 @@
 {
   "name": "smart-resident",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
